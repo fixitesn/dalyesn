@@ -36,7 +36,7 @@ const knightVariant = {
     transition: {
       delay: 0.2 + i * 0.2,
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
+      ease: [0.16, 1, 0.3, 1] as const,
     },
   }),
 };
