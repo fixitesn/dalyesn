@@ -32,7 +32,7 @@ const Starfield = () => {
         const opacity = 0.3 + 0.7 * Math.abs(Math.sin(t * 0.001 * s.speed + s.phase));
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+        ctx.fillStyle = `rgba(14, 108, 117, ${opacity * 0.6})`;
         ctx.fill();
       });
       animId = requestAnimationFrame(draw);
